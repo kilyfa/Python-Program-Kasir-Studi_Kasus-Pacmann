@@ -80,55 +80,49 @@ Flowchart Menghitung Total Harga dan Diskon (total_price)
 ## Fungsi yang digunakan
 
 ```
-$ register_member(username)
+$ Buying(username)
   # Mendaftarkan pengguna baru sebagai member
 
-$ add_transaction(username, transaction_id, nama_barang, jumlah, harga)
+$ add_transaction([nama_barang, jumlah, harga])
   # Menambahkan transaksi baru untuk pengguna
 
-$ show_transaction(username)
+$ show_transaction(transaction_id)
   # Menampilkan transaksi berdasarkan ID pengguna
 
-$ update_transaction_name(username, transaction_id, nama_lama, nama_baru)
+$ update_transaction_name(transaction_id, nama_lama, nama_baru)
   # Mengubah nama barang dalam suatu transaksi
 
-$ total_price(username)
-  # Menghitung total harga belanja dan memberikan diskon jika memenuhi syarat
+$ update_transaction_quan(transaction_id, nama, quantity_baru)
+  # Mengubah nama barang dalam suatu transaksi
 
-$ validate_user(username)
-  # Mengecek apakah user sudah terdaftar
+$ update_transaction_price(transaction_id, nama, price_baru)
+  # Mengubah nama barang dalam suatu transaksi
 
-$ validate_transaction(username, transaction_id)
-  # Mengecek apakah transaksi ada dalam data pengguna
+$ delete_items(nama)
+  # Menghapus produk pada transaction id tertentu
 
-$ apply_discount(total_price)
-  # Menghitung diskon berdasarkan total harga
+$ reset_transaction()
+  # Reset transaksi pada user tersebut
+
+$ check_order()
+  # Mengecek apakah order sudah sesuai
+
+$ total_price()
+  # Total harga pada barang tersebut
 ```
 
-## Deployment
+## Contoh Penggunaan Code
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
+![alt text](image.png)
 
-### Server
+![alt text](image-1.png)
 
-- Live:
-- Release:
-- Development:
+![alt text](image-2.png)
 
-### Branches
+![alt text](image-3.png)
 
-- Master:
-- Feature:
-- Bugfix:
-- etc...
+### Kesimpulan
 
-## Additional Documentation and Acknowledgments
+Project ini merupakan sistem kasir berbasis Python yang memungkinkan pengguna untuk melakukan transaksi pembelian dengan fitur seperti pendaftaran member, pencatatan transaksi, pembaruan item, pengecekan pesanan, dan perhitungan total harga dengan diskon otomatis.
 
-- Project folder on server:
-- Confluence link:
-- Asana board:
-- etc...
-
-```
-
-```
+Dengan menggunakan struktur berbasis kelas (Buying), sistem ini dirancang agar mudah diperluas dan diintegrasikan dengan aplikasi lain. Fitur seperti pengecekan validitas input dan penggunaan pustaka tabulate juga memastikan pengalaman pengguna yang lebih nyaman.
