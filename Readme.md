@@ -13,8 +13,8 @@ def \_\_init pada Class Buying:
 ```
 1. Meminta pengguna memasukkan username.
 2. Mengecek apakah username sudah terdaftar dalam daftar anggota.
-$ Jika ya, tampilkan pesan "Member sudah terdaftar, silahkan dilanjut".
-$ Jika tidak, tambahkan username ke daftar anggota dan tampilkan pesan "Member telah didaftarkan dengan ID: [username]".
+- Jika ya, tampilkan pesan "Member sudah terdaftar, silahkan dilanjut".
+- Jika tidak, tambahkan username ke daftar anggota dan tampilkan pesan "Member telah didaftarkan dengan ID: [username]".
 3. Selesai.
 ```
 
