@@ -94,9 +94,7 @@ $ update_transaction_name(username, transaction_id, nama_lama, nama_baru)
 
 $ total_price(username)
   # Menghitung total harga belanja dan memberikan diskon jika memenuhi syarat
-```
 
-```
 $ validate_user(username)
   # Mengecek apakah user sudah terdaftar
 
@@ -105,7 +103,7 @@ $ validate_transaction(username, transaction_id)
 
 $ apply_discount(total_price)
   # Menghitung diskon berdasarkan total harga
-
+```
 
 ## Deployment
 
@@ -130,4 +128,7 @@ Additional notes on how to deploy this on a live or release system. Explaining t
 - Confluence link:
 - Asana board:
 - etc...
+
+```
+
 ```
