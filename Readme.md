@@ -1,6 +1,6 @@
 # Project Title
 
-Program Kasir
+Program Kasir pada Python
 
 ## Problem Statement
 
@@ -8,11 +8,15 @@ Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. A
 
 ### Framework
 
-The things you need before installing the software.
+def \_\_init pada Class Buying:
 
-- You need this
-- And you need this
-- Oh, and don't forget this
+```
+1. Meminta pengguna memasukkan username.
+2. Mengecek apakah username sudah terdaftar dalam daftar anggota.
+$ Jika ya, tampilkan pesan "Member sudah terdaftar, silahkan dilanjut".
+$ Jika tidak, tambahkan username ke daftar anggota dan tampilkan pesan "Member telah didaftarkan dengan ID: [username]".
+3. Selesai.
+```
 
 ### Installation
 
